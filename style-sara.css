@@ -1,10 +1,23 @@
+/*
+
+Códigos colores
+
+amarillo - #f5b531
+azul claro - #60bbe8
+azul más oscuro - #36a9e0
+verde - #238e70
+blanco - #f2fafd
+negro - #333333
+
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.container {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -92,21 +105,49 @@ body {
     flex-direction: column;
     align-content: space-around;
     text-align: center;
+    gap: 16px;;
+    padding: 16px 16px;
 }
 
-.terms a {
+.footer-links {
+    display: flex;
+
+}
+
+.intern-links {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+}
+
+.intern-links ul li {
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+.intern-links ul li a {
     color: #333333;
+    text-decoration: none;
+
 }
 
 .extern-links {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
     align-items: center;
+    width: 100%;
 }
 
 .download {
     display: flex;
+    gap: 16px;
+}
+
+.download img {
+    height: 40px;
 }
 
 .social-media {
