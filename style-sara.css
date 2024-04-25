@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+    height: 100vh;
+}
+/*---Header Styles---*/
+.logo img {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 140px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #f5b531;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar-button {
+    white-space: nowrap;
+    background: #f2faf0;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #f5b531;
+    left: -16px;
+    top: 100%;
+    margin-top: 8px;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+    padding: 16px 16px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*---Footer Styles---*/
+.footer {
+    background-color: #f5b531;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+}
+
+.terms a {
+    color: #333333;
+}
+
+.extern-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.download {
+    display: flex;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+.fa-brands {
+    color: #333333;
+}
+
+/*---Main Styles---*/
+.main {
+    background-color: grey;
+    height: 500px;
+}
