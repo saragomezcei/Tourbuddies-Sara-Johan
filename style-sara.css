@@ -17,7 +17,7 @@ negro - #333333
     box-sizing: border-box;
 }
 
-.container {
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -25,26 +25,80 @@ negro - #333333
     height: 100vh;
 }
 /*---Header Styles---*/
-.logo img {
-    display: flex;
-    justify-content: flex-start;
-    text-decoration: none;
-    width: 140px;
-}
-
-.navbar {
+.header {
     position: fixed;
     width: 100%;
     background-color: #f5b531;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
+    padding: 0px 32px;
+
+}
+
+.logo img {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    height: 60px;
+    padding: 8px 0px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #333333;
+    padding: 16px 8px;
+    white-space: nowrap;
+}
+
+.navbar li a.active{
+    text-decoration: none;
+    color: #f2faf0;
+    padding: 16px 8px;
+    border-bottom: 2px solid #f2faf0;
+}
+
+.navbar ul li a:hover {
+    color: #f2faf0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 150%;
+    left: -8px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    background-color: #f5b531;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .navbar-buttons {
     display: flex;
     gap: 16px;
+    padding: 8px 0px;
 }
 
 .navbar-button {
@@ -55,47 +109,6 @@ negro - #333333
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
-}
-
-.menu {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.menu ul {
-    display: flex;
-    gap: 30px;
-    list-style-type: none;
-}
-
-.menu li a {
-    color: #333333;
-    text-decoration: none;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.menu .dropdown-menu {
-    display: none;
-    position: absolute;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: #f5b531;
-    left: -16px;
-    top: 100%;
-    margin-top: 8px;
-}
-
-.dropdown-menu li {
-    list-style-type: none;
-    padding: 16px 16px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 /*---Footer Styles---*/
@@ -160,6 +173,47 @@ negro - #333333
 
 /*---Main Styles---*/
 .main {
-    background-color: grey;
-    height: 500px;
+    background-color: #faf8f0;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main a {
+    color: #238e70;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container img {
+    width: 200px;
+    margin: 32px;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 24px;
+}
+
+.login-container input {
+    display: block;
+    width: 100%;
+    margin: 24px;
+}
+
+.login-container button {
+    display: block;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    margin: 24px;
 }
