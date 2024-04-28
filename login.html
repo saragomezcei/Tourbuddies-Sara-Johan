@@ -21,7 +21,7 @@
 
 <body>
     <div class="container">
-        <!-- <div class="header">
+        <div class="header">
             <a href="./" class="logo"><img src="imgs/Logo_Buddies.png" alt="Logo"></a>
             <nav class="navbar">
                 <ul>
@@ -45,42 +45,42 @@
                 </ul>
             </nav>
             <div class="navbar-buttons">
-                <a href="#"><button class="navbar-button">Inicia sesión</button></a>
-                <a href="#"><button class="navbar-button">Regístrate</button></a>
+                <a href="login.html"><button class="navbar-button">Inicia sesión</button></a>
+                <a href="register.html"><button class="navbar-button">Regístrate</button></a>
             </div>
-        </div>  -->
+        </div> 
         <div class="main">
             <div class="login-container">
-                <img src="imgs/Logo_Buddies.png" alt="TourBuddies">
-                <div class="login-form">
-                    <h2>Inicia sesión</h2>
-                    <form action="#">
-                        <div class="input-group">
-                            <label for="correoelectronico">
-                                Correo electrónico
-                            </label>
-                            <input type="email" name="correoelectronico" id="correoelectronico" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="password">
-                                Contraseña
-                            </label>
-                            <input type="password" name="password" id="password" required>
-                        </div>
-                        <button type="submit">Inicia sesión</button>
-                    </form>
-                    <p>Si todavía no tienes una cuenta, <a href="register.html">regístrate</a></p>
-                </div>
+                <!-- <img src="imgs/Logo_Buddies.png" alt="TourBuddies"> -->
+                <form action="#" class="login-form">
+                <h2>Inicia sesión</h2>
+                    <label for="correoelectronico">
+                        Correo electrónico
+                    </label>
+                    <input type="email" name="correoelectronico" id="correoelectronico" required>
+                    <label for="password">
+                        Contraseña
+                    </label>
+                    <input type="password" name="password" id="password" required>
+                    <p class="help-block"><a href="#">¿Has olvidado tu contraseña?</a></p>
+                    <button type="submit">Inicia sesión</button>
+                </form>
+                <p>Si todavía no tienes una cuenta, <a href="register.html">regístrate</a></p>
+                <p class="footer-short">Al iniciar sesión o al crear una cuenta, aceptas nuestros <a href="terms">Términos y condiciones</a> y la <a href="privacy">Política de privacidad</a>. <br><br>
+                    Todos los derechos reservados.<br><br>
+                    <i class="fa-regular fa-copyright"></i> TourBuddies - 2024. Creado por Johan
+                    y Sara.</p>
             </div>
         </div>
-        <div class="footer">
+
+        <!-- <div class="footer">
             <div class="footer-links">
                 <div class="intern-links">
                     <ul>
                         <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Ayuda</a></li>
                         <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Empleo</a></li>
                     </ul>
                 </div>
                 <div class="extern-links">
@@ -99,7 +99,7 @@
             </div>
             <div class="copyright"><i class="fa-regular fa-copyright"></i> TourBuddies - 2024. Creado por Johan
                 y Sara.</div>
-        </div>
+        </div> -->
     </div>
 </body>
 
