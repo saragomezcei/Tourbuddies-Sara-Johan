@@ -4,86 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .terminos-condiciones {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: justify;
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-
-        .terminos-condiciones h1 {
-            margin-bottom: 20px;
-            background-color: #f5b531;
-            padding: 10px 20px;
-            color: #333333;
-            border-radius: 10px
-
-        }
-
-        .terminos-condiciones p {
-            margin-bottom: 10px;
-            color: #575656;
-            
-        }
-      
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Plantilla</title>
 </head>
 
 <body>
-    <div class="terminos-condiciones">
-        <h1>Términos y Condiciones de Uso de TourBuddies</h1>
-        <div>
-            <p>
-                <strong>Bienvenido a TourBuddies,</strong> una aplicación que te conecta con experiencias de viaje
-                únicas y emocionantes.
-                Antes de utilizar nuestra aplicación, por favor, <strong>lee atentamente estos términos y
-                    condiciones.</strong> Al acceder o
-                utilizar la aplicación TourBuddies, aceptas estar legalmente obligado por estos términos y condiciones.
-            </p>
+    <div class="container">
+        <div class="header">
+            <a href="./" class="logo"><img src="imgs/Logo_Buddies.png" alt="Logo"></a>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Nosotros</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Servicios <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Servicio 1</a></li>
+                            <li><a href="#">Servicio 2</a></li>
+                            <li><a href="#">Servicio 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-buttons">
+                <a href="login.html"><button class="navbar-button">Inicia sesión</button></a>
+                <a href="register.html"><button class="navbar-button">Regístrate</button></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="terminos-condiciones">
+                <h1>Términos y Condiciones de Uso de TourBuddies</h1>
+                <div>
+                    <p>
+                        <strong>Bienvenido a TourBuddies,</strong> una aplicación que te conecta con experiencias de
+                        viaje
+                        únicas y emocionantes.
+                        Antes de utilizar nuestra aplicación, por favor, <strong>lee atentamente estos términos y
+                            condiciones.</strong> Al acceder o
+                        utilizar la aplicación TourBuddies, aceptas estar legalmente obligado por estos términos y
+                        condiciones.
+                    </p>
 
-            <p>
-                <strong>Aceptación de los Términos:</strong> Al utilizar la aplicación TourBuddies, aceptas estos términos y condiciones, así como nuestra política de privacidad. Si no estás de acuerdo con alguno de estos términos, por favor, no utilices nuestra aplicación.
-            </p>
-            <p>
-                <strong> Uso de la Aplicación: </strong> TourBuddies te proporciona acceso a una variedad de tours y actividades de viaje. Puedes utilizar nuestra aplicación para buscar, reservar y participar en tours ofrecidos por nuestros proveedores asociados. Sin embargo, debes utilizar la aplicación de manera legal y de acuerdo con estos términos y condiciones.
-            </p>
-            <p>
-                <strong>Reservas y Pagos:</strong> Al reservar un tour a través de TourBuddies, aceptas pagar el precio total del tour según lo especificado en la aplicación. Los pagos se procesarán a través de métodos de pago seguros proporcionados por nuestros proveedores de servicios de pago.
-            </p>
-            <p>
-                <strong> Cancelaciones y Reembolsos: </strong>Las políticas de cancelación y reembolso de cada tour son determinadas por los proveedores individuales y se indican claramente en la aplicación. TourBuddies no es responsable de los reembolsos de tours cancelados por los usuarios.
-            </p>
+                    <p>
+                        <strong>Aceptación de los Términos:</strong> Al utilizar la aplicación TourBuddies, aceptas
+                        estos términos y condiciones, así como nuestra política de privacidad. Si no estás de acuerdo
+                        con alguno de estos términos, por favor, no utilices nuestra aplicación.
+                    </p>
+                    <p>
+                        <strong> Uso de la Aplicación: </strong> TourBuddies te proporciona acceso a una variedad de
+                        tours y actividades de viaje. Puedes utilizar nuestra aplicación para buscar, reservar y
+                        participar en tours ofrecidos por nuestros proveedores asociados. Sin embargo, debes utilizar la
+                        aplicación de manera legal y de acuerdo con estos términos y condiciones.
+                    </p>
+                    <p>
+                        <strong>Reservas y Pagos:</strong> Al reservar un tour a través de TourBuddies, aceptas pagar el
+                        precio total del tour según lo especificado en la aplicación. Los pagos se procesarán a través
+                        de métodos de pago seguros proporcionados por nuestros proveedores de servicios de pago.
+                    </p>
+                    <p>
+                        <strong> Cancelaciones y Reembolsos: </strong>Las políticas de cancelación y reembolso de cada
+                        tour son determinadas por los proveedores individuales y se indican claramente en la aplicación.
+                        TourBuddies no es responsable de los reembolsos de tours cancelados por los usuarios.
+                    </p>
 
-            <p>
-                <strong> Responsabilidad del Usuario: </strong> Al utilizar TourBuddies, eres responsable de proporcionar información precisa y actualizada, así como de cumplir con cualquier requisito de edad o restricción de salud para participar en los tours reservados.
-            </p>
+                    <p>
+                        <strong> Responsabilidad del Usuario: </strong> Al utilizar TourBuddies, eres responsable de
+                        proporcionar información precisa y actualizada, así como de cumplir con cualquier requisito de
+                        edad o restricción de salud para participar en los tours reservados.
+                    </p>
 
-            <p>
-                <strong> Propiedad Intelectual: </strong> TourBuddies y su contenido, incluidos textos, imágenes, logotipos y marcas registradas, están protegidos por leyes de propiedad intelectual. No puedes copiar, reproducir o distribuir el contenido de la aplicación sin permiso previo.
+                    <p>
+                        <strong> Propiedad Intelectual: </strong> TourBuddies y su contenido, incluidos textos,
+                        imágenes, logotipos y marcas registradas, están protegidos por leyes de propiedad intelectual.
+                        No puedes copiar, reproducir o distribuir el contenido de la aplicación sin permiso previo.
 
-            </p>
+                    </p>
 
-            <p>
-                <strong> Modificaciones y Actualizaciones:</strong> TourBuddies se reserva el derecho de modificar o actualizar estos términos y condiciones en cualquier momento. Las modificaciones entrarán en vigencia inmediatamente después de su publicación en la aplicación. Se te notificará cualquier cambio importante en los términos y condiciones.
+                    <p>
+                        <strong> Modificaciones y Actualizaciones:</strong> TourBuddies se reserva el derecho de
+                        modificar o actualizar estos términos y condiciones en cualquier momento. Las modificaciones
+                        entrarán en vigencia inmediatamente después de su publicación en la aplicación. Se te notificará
+                        cualquier cambio importante en los términos y condiciones.
 
-            </p>
+                    </p>
 
-            <p>
-                <strong>Terminación de Acceso: </strong>TourBuddies se reserva el derecho de terminar o suspender tu acceso a la aplicación en caso de incumplimiento de estos términos y condiciones, o por cualquier otro motivo a nuestra discreción.
-            </p>
+                    <p>
+                        <strong>Terminación de Acceso: </strong>TourBuddies se reserva el derecho de terminar o
+                        suspender tu acceso a la aplicación en caso de incumplimiento de estos términos y condiciones, o
+                        por cualquier otro motivo a nuestra discreción.
+                    </p>
 
-            Al utilizar TourBuddies, aceptas estos términos y condiciones. Si tienes al
-            estos términos, por favor, contáctanos en [atencionalcliente@tourbuddies.es].
-            y disfruta de tus viajes con nosotros.
+                    <p>Al utilizar TourBuddies, aceptas estos términos y condiciones. Si tienes al
+                    estos términos, por favor, contáctanos en [atencionalcliente@tourbuddies.es].
+                    y disfruta de tus viajes con nosotros.
 
-            Última actualización: [27/04/2024]
+                    Última actualización: [27/04/2024]
+                </p>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="footer-links">
+            <div class="intern-links">
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Empleo</a></li>
+                </ul>
+            </div>
+            <div class="extern-links">
+                <div class="download">
+                    <img src="imgs/AppStore.png" alt="Descargar desde App Store">
+                    <img src="imgs/googleplay.png" alt="Descargar desde Google Play">
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-threads"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><i class="fa-regular fa-copyright"></i> TourBuddies - 2024. Creado por Johan
+            y Sara.</div>
+    </div>
 </body>
+
 
 </html>
