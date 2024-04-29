@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <style>
+        .pricing-cards {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 300px;
+            border: 2px solid #36a9e0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19),
+            0 6px 3px rgba(0, 0, 0, 0.23);
+            
+        }
+
+        .card h2 {
+            color: #333333;
+        }
+
+        .card p {
+            color: #666666;
+        }
+
+        .card .price {
+            font-size: 24px;
+            color: #f5b531;
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+
+        .card .btn {
+            background-color: #f5b531;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .card .btn:hover {
+            background-color: #36a9e0;
+        }
+
+        .card ul{
+            text-align: left;
+            padding-right: 10px;
+        }
+
+        .card s {
+            color: #949393;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="pricing-cards">
+        <div class="card">
+            <h2>Plan Basic Buddies</h2>
+            <ul>
+                <li>Acceso básico a la plataforma de TourBuddies.</li>
+                <li>Explora una selección limitada de destinos y actividades.</li>
+                <li>Conéctate con otros viajeros y comparte tus experiencias.</li>
+                <li><s>Acceso prioritario a nuevas funciones y actualizaciones.</s></li>
+                <li><s>Soporte premium las 24 horas del día, los 7 días de la semana.</s></li>
+                <li><s>Ideal para viajeros que buscan una experiencia de viaje de lujo y personalizada.</s></li>
+                <br>
+
+            </ul>
+            <p class="price">Free</p>
+            <button class="btn">Seleccionar</button>
+        </div>
+        <div class="card">
+            <h2>Plan Silver Buddies</h2>
+            <ul>
+                <li>Acceso completo a la plataforma de TourBuddies.</li>
+                <li>Explora una amplia variedad de destinos y actividades en todo el mundo.</li>
+                <li>Acceso prioritario a nuevas funciones y actualizaciones.</li>
+                <li>Soporte premium las 24 horas del día, los 7 días de la semana.</li>
+                <li>Perfecto para viajeros frecuentes que buscan una experiencia más completa.</li>
+                <li><s>Ideal para viajeros que buscan una experiencia de viaje de lujo y personalizada.</s></li>
+            </ul>
+            <p class="price">$9.99/mes</p>
+            <button class="btn">Seleccionar</button>
+        </div>
+        <div class="card">
+            <h2>Plan Golden Buddies</h2>
+            <ul>
+                <li>Acceso premium ilimitado a la plataforma de TourBuddies.</li>
+                <li>Explora todos los destinos y actividades disponibles, incluyendo tours exclusivos.</li>
+                <li>Descuentos especiales en alojamiento y transporte.</li>
+                <li>Acceso VIP a eventos y experiencias únicas en todo el mundo.</li>
+                <li>Asistencia personalizada de un asesor de viajes dedicado.</li>
+                <li>Ideal para viajeros que buscan una experiencia de viaje de lujo y personalizada.</li>
+            </ul>
+            <p class="price">$15.99/mes</p>
+            <button class="btn">Seleccionar</button>
+        </div>
+    </div>
+</body>
+
+</html>

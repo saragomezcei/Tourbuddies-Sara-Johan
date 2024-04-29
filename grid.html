@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid de Imágenes</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px;
+            width: 800px;    
+        }
+
+        .grid-item img {
+            image-rendering: 100%;
+            width: 100%; 
+            height: 250px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #60bbe8;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19),
+            0 6px 3px rgba(0, 0, 0, 0.23);
+        }
+ 
+        .galeria-fotos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .galeria-fotos-textos {
+            width: 1000px;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+        }
+
+        .galeria-fotos-textos h1 {
+            margin-bottom: 20px;
+            background-color: #f5b531;
+            padding: 10px 80px;
+            color: #333333;
+            border-radius: 10px;
+            display: inline-block
+        }
+
+        .galeria-fotos-textos p {
+            text-align: justify;
+
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <div class="galeria-fotos">
+        <div class="galeria-fotos-textos">
+            <h1>Experiencias <em>#TourBuddies</em></h1>
+            <p>
+                Las imágenes que ves en nuestra galería de fotos son <strong>experiencias</strong> compartidas por nuestros usuarios de <strong>TourBuddies</strong>. Cada foto representa una aventura única y emocionante vivida por uno de nuestros viajeros. Desde <strong> paisajes naturales </strong> hasta vibrantes ciudades llenas de cultura, estas experiencias son solo una pequeña muestra de la diversidad y la emoción que puedes encontrar al <strong> el mundo con TourBuddies.</strong> Únete a nuestra comunidad de viajeros y descubre las maravillas del mundo a través de los ojos de aquellos que ya han explorado con nosotros. <h2>¡Te esperamos con los brazos abiertos para que te unas a la diversión!</h2>
+            </p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/experiencia1.jpg" alt="experiencia1">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia2.jpg" alt="experiencia2">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia3.jpg" alt="experiencia3">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia4.jpg" alt="experiencia4">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia5.jpg" alt="experiencia5">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia6.jpg" alt="experiencia6">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia7.jpg" alt="experiencia7">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia8.jpg" alt="experiencia8">
+            </div>
+            <div class="grid-item">
+                <img src="images/experiencia9.jpg" alt="experiencia9">
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
