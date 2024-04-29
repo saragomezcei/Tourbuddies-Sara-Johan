@@ -6,18 +6,121 @@
     <title>Document</title>
 </head>
 <style>
-.main-box-profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
 
+    }
+
+    .resena {
+        background-color: rgba(0, 255, 255, 0);
+        height: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 0px;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+    img {
+        opacity: 100;
+        width: 100%;
+    }
+
+    .foto {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        background-image: url(images/nicole.jpg);
+        background-size: cover;
+        background-position: center;
+        border-style: dashed;
+        border-color: #36a9e0;
+    }
+
+
+    .texto {
+        background-color: rgba(137, 43, 226, 0);
+        width: 600px;
+        color: #333333;
+        text-align: left;
+        padding-left: 30px;
+        text-align: justify;
+        
+    }
+
+    .texto h1 {
+        margin-top: 20px;
+        color: #36a9e0
+    }
+
+    .gustos {
+        width: 900px;
+        text-align: justify;
+    }
+
+    .gustos strong {
+        color: #36a9e0
+    }
+
+    table {
+        width: 100%;/ border-collapse: collapse;
+        border: 1px solid #36a9e0;
+        border-style: dashed;
+        border-radius: 10px;
+    }
+
+    th, 
+    td {
+        border-left: 1px solid #36a9e0;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+    background-color: #36a9e0; 
+    color: white;
 }
 </style>
 <body>
-    <div class="main-box-profile">
-        <div class="box-profile"> texto y foto</div>
-        <div class="box text"> texto main </div>
+    <div class="container">
+        <div class="resena uno">
+            <div class="foto">
+            </div>
+            <div class="texto">
+                <h1>Natalia Medina</h1>
+                <table>
+                    <tr>
+                        <th><Strong>Ciudad/Pais</Strong></th>
+                        <th><Strong>Edad</Strong></th>
+                        <th><Strong>Miembro desde</Strong></th>
+                        <th><Strong>Tipo de TourBuddie</Strong></th>
+                    </tr>
+                    <tr>
+                        <td>Lima-Peru</td>
+                        <td>26 Años</td>
+                        <td>2020</td>
+                        <td>Free</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="gustos">
+            <p>Me encanta sumergirme en las <Strong>culturas locales</Strong>, probar nuevos sabores, escuchar historias fascinantes y
+                explorar paisajes impresionantes. Ya sea caminando por las calles empedradas de un antiguo pueblo
+                europeo o <strong> senderismo en medio de la exuberante selva tropical</strong>, cada experiencia de viaje me
+                deja recuerdos imborrables y enseñanzas valiosas.
+                Una de mis pasiones mientras viajo es <strong>capturar la belleza</strong> y la esencia de cada lugar a través de la
+                fotografía. Cada foto que tomo es una instantánea de una historia única, un momento que quiero <strong>
+                para siempre.</strong>
+            </p>
+        </div>
     </div>
 </body>
 </html>
