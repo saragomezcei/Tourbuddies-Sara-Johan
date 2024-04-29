@@ -16,7 +16,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style-sara.css">
-    <title>Plantilla</title>
+    <title>Regístrate</title>
 </head>
 
 <body>
@@ -50,16 +50,129 @@
             </div>
         </div>
         <div class="main">
-            
+            <div class="register-container">
+                <h2>Regístrate</h2>
+                <div class="register-form">
+                    <div class="datospersonales">
+                        <form action="#">
+                            <input type="text" name="" id="" required style="display: none;">
+                            <label for="name">
+                                Nombre
+                            </label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="surname">
+                                Apellidos
+                            </label>
+                            <input type="text" name="surname" id="surname" required>
+                            <label for="correoelectronico">
+                                Correo electrónico
+                            </label>
+                            <input type="email" name="correoelectronico" id="correoelectronico" required>
+                            <label for="password">
+                                Crea una contraseña
+                            </label>
+                            <input type="password" name="password" id="password" required>
+                            <label for="date">
+                                Fecha de nacimiento
+                            </label>
+                            <input type="date">
+                            <label for="genre">Género</label>
+                            <select name="genre" id="genre">
+                                <option value="value1">Femenino</option>
+                                <option value="value2">Masculino</option>
+                                <option value="value3">No binario</option>
+                                <option value="value3">Prefiero no decirlo</option>
+                            </select>
+                            <label for="phone">Télefono</label>
+                            <input type="tel" name="phone" id="phone">
+                            <p>¿Estás dispuesto(a) a ser anfitrión(a)  en tu destino?</p>
+                            <div class="radiobutton-register">
+                                <input type="radio" name="yes" id="yes">
+                                <label for="yes">Sí</label>
+                                <input type="radio" name="No" id="No">
+                                <label for="No">No</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="datosviaje">
+                        <form action="#">
+                            <p>¿Qué tipo de actividades disfrutas durante los viajes?<br> (Selecciona todas las que apliquen):</p>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox1" value="first_checkbox" />
+                                <label for="cbox1">Explorar la naturaleza</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />
+                                <label for="cbox2"> Visitar sitios históricos
+                                </label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox3" value="third_checkbox" />
+                                <label for="cbox4">Descubrir la vida nocturna</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox4" value="fourth_checkbox" />
+                                <label for="cbox5">Realizar actividades de bienestar</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox5" value="fifth_checkbox" />
+                                <label for="cbox6">Otros</label>
+                            </div>
+                            <textarea name="otros" id="" rows="1"></textarea>
+                            <label for="">¿Tienes alguna condición médica o alergia?</label>
+                            <textarea name="" id="" cols="5" rows="1"></textarea>
+                            <label for="">¿Tienes algun requisito de accesibilidad?</label>
+                            <textarea name="" id="" cols="5" rows="1"></textarea>
+                            <p>¿Qué idiomas hablas?</p>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox1" value="first_checkbox" />
+                                <label for="cbox1">Inglés</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox2" value="second_checkbox" />
+                                <label for="cbox2"> Español
+                                </label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox3" value="third_checkbox" />
+                                <label for="cbox3">Francés</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox4" value="fourth_checkbox" />
+                                <label for="cbox4">Alemán</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox5" value="fifth_checkbox" />
+                                <label for="cbox5">Chino</label>
+                            </div>
+                            <div class="checkbox-register">
+                                <input type="checkbox" id="cbox6" value="sixth_checkbox" />
+                                <label for="cbox6">Otros</label>
+                            </div>
+                            <textarea name="otros" id="" rows="1"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <a href="perfil"><button type="submit">Registrarme</button></a>
+                <p>¿Ya estás registrado? <a href="login.html">Inicia sesión</a></p>
+                <p class="footer-short">Al iniciar sesión o al crear una cuenta, aceptas nuestros <a
+                        href="terms">Términos y condiciones</a> y la <a href="privacy">Política de privacidad</a>.
+                    <br><br>
+                    Todos los derechos reservados.<br><br>
+                    <i class="fa-regular fa-copyright"></i> TourBuddies - 2024. Creado por Johan
+                    y Sara.
+                </p>
+            </div>
         </div>
-        <div class="footer">
+
+        <!-- <div class="footer">
             <div class="footer-links">
                 <div class="intern-links">
                     <ul>
                         <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Ayuda</a></li>
                         <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Empleo</a></li>
                     </ul>
                 </div>
                 <div class="extern-links">
@@ -78,7 +191,7 @@
             </div>
             <div class="copyright"><i class="fa-regular fa-copyright"></i> TourBuddies - 2024. Creado por Johan
                 y Sara.</div>
-        </div>
+        </div> -->
     </div>
 </body>
 
