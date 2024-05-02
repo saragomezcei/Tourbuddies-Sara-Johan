@@ -4,152 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Reseñas - Tour Buddies</title>
 </head>
-<style>
-    .container-resenas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-
-    }
-
-    .resena {
-        background-color: rgba(0, 255, 255, 0);
-        height: 400px;
-        width: 1000px;
-        text-align: center;
-        border-radius: 20px;
-        border: 2px solid #60bbe8;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19),
-            0 6px 3px rgba(0, 0, 0, 0.23);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 0px;
-        gap: 20px;
-        padding: 20px;
-
-    }
-
-    /* img {
-        opacity: 100;
-        width: 100%;
-    } */
-
-    .foto {
-        width: 400px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-image: url(images/nicole.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .foto-segunda {
-        width: 400px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-image: url(images/victor.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .foto-tercera {
-        width: 400px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-radius: 10%;
-        background-image: url(images/romina.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .texto {
-        background-color: rgba(137, 43, 226, 0);
-        width: 600px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        margin-right: 60px;
-        color: #333333;
-        text-align: left;
-        padding-left: 30px;
-        text-align: justify;
-    }
-
-    .texto h1 {
-        margin-top: 20px;
-        color: #36a9e0
-    }
-
-    .stars {
-        color: #f5b531;
-    }
-</style>
 
 <body>
-    <div class="container-resenas">
-        <div class="resena uno">
-            <div class="foto">
-            </div>
-            <div class="texto">
-                <h1>Paulina y Natalia</h1>
-                <p>¡TourBuddies es absolutamente increíble! Me encanta la cantidad de opciones de tours disponibles en esta aplicación. Desde recorridos históricos hasta aventuras culinarias, siempre encuentro algo emocionante para explorar. La función de recomendaciones personalizadas me ha llevado a descubrir gemas ocultas en cada ciudad que visito. Además, la interfaz es fácil de usar y la integración con mapas offline es perfecta para cuando estoy fuera de línea. ¡Recomendaría esta aplicación a todos los viajeros ávidos!
-                   </p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="resena uno">
-            <div class="foto-segunda">
-            </div>
-            <div class="texto">
-                <h1>Victor y andres</h1>
-                <p>TourBuddies ha sido mi compañero de viaje confiable durante años. La variedad de tours disponibles es impresionante, y la calidad de las experiencias nunca decepciona. Me encanta la flexibilidad para reservar tours de última hora y la conveniencia de poder acceder a los detalles del tour en cualquier momento a través de la aplicación. Además, el equipo de soporte siempre está disponible y es muy útil. ¡No puedo recomendar esta aplicación lo suficiente!
-                </p>
-                    <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
+    <div class="container">
+        <div class="header">
+            <a href="./" class="logo"><img src="imgs/Logo_Buddies.png" alt="Logo"></a>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Conoce más <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tabla-precios.html">Tarifas</a></li>
+                            <li><a href="resenas.html">Reseñas</a></li>
+                            <li><a href="terminos.html">Terminos y condiciones</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="perfil.html">Tu perfil</a>
+                    </li>
+                    <li>
+                        <a href="grid.html">Galería</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-buttons">
+                <a href="login.html"><button class="navbar-button">Inicia sesión</button></a>
+                <a href="register.html"><button class="navbar-button">Regístrate</button></a>
             </div>
         </div>
-
-
-        <div class="resena uno">
-            <div class="foto-tercera">
-            </div>
-            <div class="texto">
-                <h1>Romina, Valeria y Laura</h1>
-                <p>¡Wow! Tour Buddies ha elevado mis viajes a un nivel completamente nuevo. Cada tour que he reservado a través de esta aplicación ha sido una experiencia memorable. Me encanta la facilidad con la que puedo explorar diferentes opciones y personalizar mi itinerario según mis intereses. La calidad de los guías turísticos y la atención al detalle en cada tour son excepcionales. ¡Esta aplicación es imprescindible para cualquier viajero que quiera aprovechar al máximo sus aventuras!
-                </p>
-                    <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+        <div class="main">
+            <div class="container-resenas">
+                <div class="resena uno">
+                    <div class="foto">
+                    </div>
+                    <div class="texto">
+                        <h1>Paulina y Natalia</h1>
+                        <p>¡TourBuddies es absolutamente increíble! Me encanta la cantidad de opciones de tours disponibles en esta aplicación. Desde recorridos históricos hasta aventuras culinarias, siempre encuentro algo emocionante para explorar. La función de recomendaciones personalizadas me ha llevado a descubrir gemas ocultas en cada ciudad que visito. Además, la interfaz es fácil de usar y la integración con mapas offline es perfecta para cuando estoy fuera de línea. ¡Recomendaría esta aplicación a todos los viajeros ávidos!
+                           </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="resena uno">
+                    <div class="foto-segunda">
+                    </div>
+                    <div class="texto">
+                        <h1>Victor y andres</h1>
+                        <p>TourBuddies ha sido mi compañero de viaje confiable durante años. La variedad de tours disponibles es impresionante, y la calidad de las experiencias nunca decepciona. Me encanta la flexibilidad para reservar tours de última hora y la conveniencia de poder acceder a los detalles del tour en cualquier momento a través de la aplicación. Además, el equipo de soporte siempre está disponible y es muy útil. ¡No puedo recomendar esta aplicación lo suficiente!
+                        </p>
+                            <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="resena uno">
+                    <div class="foto-tercera">
+                    </div>
+                    <div class="texto">
+                        <h1>Romina, Valeria y Laura</h1>
+                        <p>¡Wow! Tour Buddies ha elevado mis viajes a un nivel completamente nuevo. Cada tour que he reservado a través de esta aplicación ha sido una experiencia memorable. Me encanta la facilidad con la que puedo explorar diferentes opciones y personalizar mi itinerario según mis intereses. La calidad de los guías turísticos y la atención al detalle en cada tour son excepcionales. ¡Esta aplicación es imprescindible para cualquier viajero que quiera aprovechar al máximo sus aventuras!
+                        </p>
+                            <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <div class="footer-links">
+                <div class="intern-links">
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Empleo</a></li>
+                    </ul>
+                </div>
+                <div class="extern-links">
+                    <div class="download">
+                        <img src="imgs/AppStore.png" alt="Descargar desde App Store">
+                        <img src="imgs/googleplay.png" alt="Descargar desde Google Play">
+                    </div>
+                    <div class="social-media">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-threads"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"><i class="fa-regular fa-copyright"></i> TourBuddies - 2024. Creado por Johan
+                y Sara.</div>
         </div>
     </div>
+
 </body>
 
 </html>
